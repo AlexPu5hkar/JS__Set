@@ -9,92 +9,126 @@ body
     justify-content: center
     background: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center (center/cover) no-repeat
     overflow: hidden
+    /*DIGITAL CLOCK*/
 .watch
     position: absolute
     top: 20px
     left: 50px
-h2
-    text-transform: uppercase
-    letter-spacing: 8px
-    font-size: 24px
-    text-align: center
-    color: #16aded
-    text-shadow: 2px 2px 5px #000000
+    &__title
+        text-transform: uppercase
+        letter-spacing: 8px
+        font-size: 24px
+        text-align: center
+        color: #16aded
+        text-shadow: 2px 2px 5px #000000
+    &__clock
+        display: flex
+    &__clock div 
+        margin: 5px
+        position: relative
+    &__clock span
+        width: 100px
+        height: 80px
+        background: #1163cd
+        opacity: 0.8
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 50px
+        text-shadow: 2px 2px 5px #000
+    &__clock &__text
+        height: 30px
+        font-size: 10px
+        text-transform: uppercase
+        letter-spacing: 2px
+        background: #16aded
+        opacity: 0.8
+    &__clock #ampm
+        bottom: 0
+        position: absolute
+        width: 60px
+        height: 30px
+        font-size: 20px
+        background: #2b3196
 
-.clock
-    display: flex
-.clock div 
-    margin: 5px
-    position: relative
-.clock span
-    width: 100px
-    height: 80px
-    background: #1163cd
-    opacity: 0.8
-    color: #fff
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 50px
-    text-shadow: 2px 2px 5px #000
-.clock .text
-    height: 30px
-    font-size: 10px
-    text-transform: uppercase
-    letter-spacing: 2px
-    background: #16aded
-    opacity: 0.8
-.clock #ampm
-    bottom: 0
-    position: absolute
-    width: 60px
-    height: 30px
-    font-size: 20px
-    background: #2b3196
-
-
-.multiplication-app
+    /*MULTIPLICATION APP*/
+.multiplication
     position: absolute  
     top: 270px
     left: 20px    
     text-align: center
     font-family: cursive
-.form
-    background: rgba(24, 190, 9, 0.6)
-    padding: 20px
-    border-radius: 12px
-    box-shadow: 5px 5px 12px #10deec
-    margin: 10px
-.input
-    display: block
-    width: 100%
-    box-sizing: border-box
-    font-size: 25px
-    text-align: center
-    background: #0abfec
-    padding: 10px
-    border: solid 4px #10deec
-    border-radius: 10px
-    font-family: cursive
-.btn
-    background: #0abfec
-    color: #000000e6
-    display: block
-    width: 100%
-    font-weight: 600
-    padding: 10px
-    font-size: 20px
-    font-family: cursive
-    margin: 20px 0
-    border-radius: 10px
-    box-shadow: 5px 5px 8px #000303
-    cursor: pointer
-    &:hover
-        filter: brightness(0.8)
-        box-shadow: 5px 5px 8px #82e1e1
-        transition: 0.5s ease-out
-.score
-    text-align: right
+    &__form
+        background: rgba(24, 190, 9, 0.6)
+        padding: 20px
+        border-radius: 12px
+        box-shadow: 5px 5px 12px #10deec
+        margin: 10px
+    &__input
+        display: block
+        width: 100%
+        box-sizing: border-box
+        font-size: 25px
+        text-align: center
+        background: #0abfec
+        padding: 10px
+        border: solid 4px #10deec
+        border-radius: 10px
+        font-family: cursive
+    &__btn
+        background: #0abfec
+        color: #000000e6
+        display: block
+        width: 100%
+        font-weight: 600
+        padding: 10px
+        font-size: 20px
+        font-family: cursive
+        margin: 20px 0
+        border-radius: 10px
+        box-shadow: 5px 5px 8px #000303
+        cursor: pointer
+        &:hover
+            filter: brightness(0.8)
+            box-shadow: 5px 5px 8px #82e1e1
+            transition: 0.5s ease-out
+    &__score
+        text-align: right
     
+    /*BUTTON*/
+/*.button
+    position: absolute
+    top: 630px
+    left: 150px
+    &__btn
+        padding:20px 40px
+        background: rgba(192, 0, 128, 0.4)
+        border-radius: 5px
+        box-shadow: 0 4px 8px #000
+        text-decoration: none
+        color: #000
+        font-family: sans-serif
+        font-size: 24px
+        font-weight: 600
+        position: relative
+        overflow: hidden
+        &::before
+            content: ""
+            position: absolute
+            background: #c9700a
+            width: 0px
+            height: 0px
+            left: var(--xPos)
+            top: var(--yPos)
+            transform: translate(-50%, -50%)
+            border-radius: 50%
+            transition: width 0.5s, height 0.5s
+        &:hover::before
+            width: 300px
+            height: 300px
+    &__text
+        position: relative
+        z-index: 1*/
     
     

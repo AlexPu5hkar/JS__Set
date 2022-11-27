@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital clock</title>
+    <title>JS Tips</title>
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
     <section class="watch">
-        <h2>Current time</h2>
-        <div class="clock">
+        <h2 class="watch__title">Current time</h2>
+        <div class="watch__clock">
             <div>
                 <span id="hour">00</span>
-                <span class="text">Hours</span>
+                <span class="watch__text">Hours</span>
             </div>
             <div>
                 <span id="minutes">00</span>
-                <span class="text">Minutes</span>
+                <span class="watch__text">Minutes</span>
             </div>
             <div>
                 <span id="seconds">00</span>
-                <span class="text">seconds</span>
+                <span class="watch__text">seconds</span>
             </div>
             <div>
                 <span id="ampm">AM</span>
             </div>
         </div>
     </section>
-    <section class="multiplication-app">
-        <form class="form" id="form">
-            <h4 class="score" id="score">Score : 0</h4>
+    <section class="multiplication">
+        <form class="multiplication__form" id="form">
+            <h4 class="multiplication__score" id="score">Score : 0</h4>
             <h1 id="question">What is 1 multiply by 1?</h1>
-            <input type="text" class="input" id="input"  placeholder="Enter yuor answer" autofocus autocomplete="off">
-            <button type="submit" class="btn">Submit</button>
+            <input type="text" class="multiplication__input" id="input"  placeholder="Enter yuor answer" autofocus autocomplete="off">
+            <button type="submit" class="multiplication__btn">Submit</button>
         </form>
     </section>
+    <!--<section class="button">
+        <a href="#" class="button__btn"><span class="button__text">Button</span></a>
+    </section>-->
     <script src="/js/index.js"></script>
     <script src="/js/multiply.js"></script>
+    <script src="/js/button.js"></script>
 </body>
 </html>
