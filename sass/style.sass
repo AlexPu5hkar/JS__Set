@@ -1,4 +1,5 @@
 body
+    position: relative
     margin: 0
     font-family: sans-serif
     display: flex
@@ -8,10 +9,13 @@ body
     justify-content: center
     background: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center (center/cover) no-repeat
     overflow: hidden
-
+.watch
+    position: absolute
+    top: 20px
+    left: 50px
 h2
     text-transform: uppercase
-    letter-spacing: 4px
+    letter-spacing: 8px
     font-size: 24px
     text-align: center
     color: #16aded
@@ -46,7 +50,51 @@ h2
     width: 60px
     height: 30px
     font-size: 20px
-    background: #a4099f
+    background: #2b3196
 
 
-        
+.multiplication-app
+    position: absolute  
+    top: 270px
+    left: 20px    
+    text-align: center
+    font-family: cursive
+.form
+    background: rgba(24, 190, 9, 0.6)
+    padding: 20px
+    border-radius: 12px
+    box-shadow: 5px 5px 12px #10deec
+    margin: 10px
+.input
+    display: block
+    width: 100%
+    box-sizing: border-box
+    font-size: 25px
+    text-align: center
+    background: #0abfec
+    padding: 10px
+    border: solid 4px #10deec
+    border-radius: 10px
+    font-family: cursive
+.btn
+    background: #0abfec
+    color: #000000e6
+    display: block
+    width: 100%
+    font-weight: 600
+    padding: 10px
+    font-size: 20px
+    font-family: cursive
+    margin: 20px 0
+    border-radius: 10px
+    box-shadow: 5px 5px 8px #000303
+    cursor: pointer
+    &:hover
+        filter: brightness(0.8)
+        box-shadow: 5px 5px 8px #82e1e1
+        transition: 0.5s ease-out
+.score
+    text-align: right
+    
+    
+    

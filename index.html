@@ -8,24 +8,35 @@
     <link rel="stylesheet" href="/css/style.min.css">
 </head>
 <body>
-    <h2>Digital clock</h2>
-    <div class="clock">
-        <div>
-            <span id="hour">00</span>
-            <span class="text">Hours</span>
+    <section class="watch">
+        <h2>Current time</h2>
+        <div class="clock">
+            <div>
+                <span id="hour">00</span>
+                <span class="text">Hours</span>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <span class="text">Minutes</span>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <span class="text">seconds</span>
+            </div>
+            <div>
+                <span id="ampm">AM</span>
+            </div>
         </div>
-        <div>
-            <span id="minutes">00</span>
-            <span class="text">Minutes</span>
-        </div>
-        <div>
-            <span id="seconds">00</span>
-            <span class="text">seconds</span>
-        </div>
-        <div>
-            <span id="ampm">AM</span>
-        </div>
-    </div>
+    </section>
+    <section class="multiplication-app">
+        <form class="form" id="form">
+            <h4 class="score" id="score">Score : 0</h4>
+            <h1 id="question">What is 1 multiply by 1?</h1>
+            <input type="text" class="input" id="input"  placeholder="Enter yuor answer" autofocus autocomplete="off">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
     <script src="/js/index.js"></script>
+    <script src="/js/multiply.js"></script>
 </body>
 </html>
