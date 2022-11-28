@@ -8,7 +8,6 @@ body
     height: 100vh
     justify-content: center
     background: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center (center/cover) no-repeat
-    overflow: hidden
     /*DIGITAL CLOCK*/
 .watch
     position: absolute
@@ -168,4 +167,64 @@ body
     &__total
     &__remain 
   
-        
+    /*Navbar*/
+
+.navbar
+    display: flex
+    position: fixed
+    top: 0
+    justify-content: space-between
+    width: 100vw
+    background: rgba(127, 17, 166, 0.4)
+    z-index: 1
+    box-shadow: 0 2px 28px rgba(25, 133, 200, 0.603)
+    &__active
+        background: rgba(40, 6, 53, 0.9)
+        box-shadow: 0 2px 28px rgba(6, 32, 47, 0.9)
+    &__img
+        padding: 10px
+    &__list
+        margin-right: 30px
+        display: flex
+        list-style-type: none
+        color: #fff
+        justify-content: space-between
+        align-items: center
+    &__reference
+        display: block
+        margin: 0 30px
+        text-decoration: none
+        color: #fff
+        font-family: cursive
+        &:hover
+            color: #c90606
+            text-shadow: 5px 5px 20px #fff
+        &__active
+            color: #eeea0a
+            
+.top
+    position: absolute
+    background: url("https://cdnb.artstation.com/p/assets/images/images/004/558/229/large/thiranjaya-gamlath-keyboard.jpg?1484582025") center (center/cover) no-repeat
+    height: 100vh
+    width: 100vw
+    justify-content: center
+    align-items: center
+    display: flex
+    &__title
+        text-align: center
+        color: #fff
+        font-size: 76px
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+        letter-spacing: 4.5px
+        text-shadow: 3px 3px 8px #000000
+.buttom
+    position: absolute
+    height: 100vh
+    width: 93vw
+    padding: 50px
+    background: #fff
+    top: 671px
+    margin: 50px 5%
+    &__text
+        font-size: 20px
+        font-weight: 600
