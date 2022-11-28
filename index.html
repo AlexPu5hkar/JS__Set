@@ -37,10 +37,19 @@
         </form>
     </section>
     <!--<section class="button">
-        <a href="#" class="button__btn"><span class="button__text">Button</span></a>
+        <a href="#" class="button__btn"><span class="button__text btn">Button</span></a>
     </section>-->
+    <section class="counter">
+        <div class="counter__title">Real-time Character Counter</div>
+        <textarea class="counter__textarea" id="textarea" placeholder="Pleace write your text here..." maxLength="150"></textarea>
+        <div class="counter__container">
+            <p>Total characters: <span class="counter__total" id="total"></span></p>
+            <p>Remaning: <span class="counter__remain" id="remain"></span></p>
+        </div>
+    </section>
     <script src="/js/index.js"></script>
     <script src="/js/multiply.js"></script>
     <script src="/js/button.js"></script>
+    <script src="/js/counter.js"></script>
 </body>
 </html>

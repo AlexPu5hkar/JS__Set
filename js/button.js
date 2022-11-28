@@ -1,6 +1,6 @@
 const btnEl = document.querySelector(".btn");
 
-btnEl.addEventListener("mouseover", (event)=> {
+btnEl.addEventListener("mouseover", (event) => {
     const x = (event.pageX - btnEl.offstepLeft);
     const y = (event.pageY - btnEl.offstepTop);
 
