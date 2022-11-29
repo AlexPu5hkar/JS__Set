@@ -7,7 +7,7 @@ body
     align-items: center
     height: 100vh
     justify-content: center
-    background: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center (center/cover) no-repeat
+    background: linear-gradient(90deg, #c59fb5, #5d5062)
     /*DIGITAL CLOCK*/
 .watch
     position: absolute
@@ -228,3 +228,55 @@ body
     &__text
         font-size: 20px
         font-weight: 600
+
+/*Color Generator*/
+
+.color
+    position: absolute
+    top: 20px
+    &__title
+        text-align: center
+        font-size: 30px
+        font-weight: 800
+        color: #fff
+        text-shadow: 2px 2px 12px #550449
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__item
+        width: 300px
+        height: 150px
+        background: grey
+        color: white
+        margin: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 25px
+        text-shadow: 2px 2px 12px #000
+        border: solid 2px #000
+        border-radius: 10px 
+
+.buttons
+    position: absolute
+    bottom: 10px
+    display: flex
+    justify-content: center
+    &__item
+        background: rgba(162, 13, 216, 0.329)
+        padding: 10px 20px
+        margin: 0 5px
+        font-size: 18px
+        border: solid 2px #f800db
+        border-radius: 100px 100px 10px 10px
+        box-shadow: 2px 2px 15px #eb08c1
+        width: 60px
+        text-align: center
+    &__ref
+        text-decoration: none
+        color: #000
+        font-family: cursive
+        font-weight: 600
+        
+        
