@@ -1,3 +1,5 @@
+"useStrict";
+
 const bgImageEl = document.getElementById("bg-image");
 
 window.addEventListener("scroll", () => {
