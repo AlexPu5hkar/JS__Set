@@ -440,15 +440,22 @@ body
         width: 130px
         height: 70px
         box-sizing: border-box
+        margin: 5px
         border-radius: 20px
         box-shadow: 4px 4px 8px #27e10a
         border: none
         font-size: 20px
         font-weight: 900
-        text-shadow: 2px 2px 8px #452b32
+        text-transform: uppercase
+        background: url('../img/4.png') center (center/cover) no-repeat
+        text-shadow: 2px 2px 8px #fcfcfc
+        cursor: pointer
         &:hover
-             box-shadow: 2px 2px 10px #27e10a
-             transition: 0.9s ease
-             transform: translateY(4px)
-
+            background-size: 125%
+            transition: 0.23s ease
+        &:active
+            box-shadow: 2px 2px 10px #27e10a
+            transition: 0.23s ease
+            transform: translateY(4px)
+            background-size: 105%
     
